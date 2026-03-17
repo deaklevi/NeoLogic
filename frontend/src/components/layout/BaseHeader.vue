@@ -13,7 +13,7 @@
       </ul>
 
       <div class="flex justify-center items-center gap-4">
-        <img src="../../assets/lightbulb.png" alt="lightbulb icon" class="w-6 h-6 object-contain">
+        <img src="../../assets/lightbulb.png" alt="lightbulb icon" class="w-6 h-6 object-contain cursor-pointer" />
         <button type="button" class="bg-linear-to-r from-[#F3A122] to-[#EC7C14] text-black font-semibold px-6 py-2 rounded-md hover:opacity-90 transition-opacity">
           Ajánlatkérés
         </button>
