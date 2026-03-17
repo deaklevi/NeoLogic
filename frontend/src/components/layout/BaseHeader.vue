@@ -1,46 +1,23 @@
 <template>
-  <nav class="bg-white">
-    <div class="flex justify-between p-3 border-b-2 flex-wrap">
-      <RouterLink to="/" class="flex items-center space-x-3">
-        <span class="self-center text-2xl font-semibold">Feladat</span>
-      </RouterLink>
-      <button class="block md:hidden" @click="toggleMenu">
-        <svg
-          class="w-5 h-5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15"
-          />
-        </svg>
-      </button>
-      <div class="w-full md:block md:w-auto" :class="{hidden: !menuOpen}">
-        <ul class="flex flex-col p-4 md:flex-row md:p-0 md:space-x-8">
-          <li class="block py-2 px-3 text-gray-500 hover:bg-blue-400 hover:text-white rounded p-2 has-[.active]:text-blue-500 has-[.active]:hover:text-white"><RouterLink to="#">1. oldal</RouterLink></li>
-        </ul>
+  <header class="w-full">
+    <nav class="flex justify-between items-center p-4 max-w-7xl mx-auto">
+      <h1 class="text-2xl"><span class="text-[#F3A122]">Neo</span>Logic</h1>
+      <ul class="hidden md:flex justify-between items-center gap-4 text-gray-400">
+        <li><a class="hover:text-white transition-all transform duration-500" href="#">Rólunk</a></li>
+        <li><a class="hover:text-white transition-all transform duration-500" href="#">Szolgáltatások</a></li>
+        <li><a class="hover:text-white transition-all transform duration-500" href="#">Folyamat</a></li>
+        <li><a class="hover:text-white transition-all transform duration-500" href="#">Kapcsolat</a></li>
+      </ul>
+      <div class="flex justify-center items-center gap-4">
+        <img src="../../assets/lightbulb.png" alt="lightbulb icon" class="w-6 h-6">
+        <button type="button" class="bg-linear-to-r from-[#F3A122] to-[#EC7C14] text-black font-semibold px-4 py-1 rounded-md ">
+          Ajánlatkérés
+        </button>
       </div>
-    </div>
-  </nav>
+      </nav>
+  </header>
 </template>
 
-<script>
-export default{
-  data(){
-    return{
-      menuOpen: false
-    }
-  },
-  methods:{
-    toggleMenu(){
-      this.menuOpen = !this.menuOpen
-    }
-  }
-}
+<script setup>
+
 </script>
