@@ -3,4 +3,5 @@
 html {
     background-color: #101013;
     color: white;
+    scroll-behavior: smooth;
 }

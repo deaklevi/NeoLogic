@@ -6,7 +6,7 @@
       </h1>
       
       <ul class="hidden md:flex justify-between items-center gap-8 text-gray-400">
-        <li><a class="hover:text-white transition-all duration-300" href="#">Rólunk</a></li>
+        <li><a class="hover:text-white transition-all duration-300" href="#aboutus">Rólunk</a></li>
         <li><a class="hover:text-white transition-all duration-300" href="#">Szolgáltatások</a></li>
         <li><a class="hover:text-white transition-all duration-300" href="#">Folyamat</a></li>
         <li><a class="hover:text-white transition-all duration-300" href="#">Kapcsolat</a></li>

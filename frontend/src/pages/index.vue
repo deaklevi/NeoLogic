@@ -51,15 +51,65 @@
     </div>
     <!--landing page end-->
 
-    
+    <!--about us page start-->
+    <div id="aboutus" class="w-full border-b border-white/10">
+
+      <!--site label-->
+      <h2 class="about-animate text-sm md:text-left md:pl-4 text-center font-bold text-[#F3A122] tracking-widest uppercase">Csapatunkról</h2>
+      <p class="about-animate text-2xl font-extrabold md:text-left md:pl-4 text-center mt-5 text-white leading-tight">
+        Akik mögötte
+        <span class="bg-linear-to-r bg-clip-text text-transparent from-[#F3A122] to-[#EC7C14]">
+          állnak
+        </span>
+      </p>
+      
+      <!--worker cards-->
+      <div class="flex flex-row flex-wrap justify-center lg:justify-center gap-6 px-4 mt-20 pb-12">
+        <BaseCard v-for="data in worker" :name="data.name" :title="data.title" :description="data.description" :skills="data.skills"/>
+      </div>
+
+    </div>
+    <!--about us page start-->
+
   </BaseLayout>
 </template>
 
 <script setup>
 import { reactive, ref, onMounted } from 'vue'
 import BaseLayout from '@layouts/BaseLayout.vue'
+import BaseCard from '@components/BaseCard.vue'
 import { useIntersectionObserver } from '@vueuse/core'
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
+
+const worker = [
+  {
+    name: 'Deák Levente',
+    title: 'Backend Engineer & API Specialist',
+    description: 'A rendszerek motorjának építője; robusztus adatbázisokat és villámgyors interfészeket tervez a biztonság jegyében.',
+    skills: ['PHP', 'Laravel', 'MySQL', 'Rest API']
+  },
+  {
+    name: 'Szűcs Marcel',
+    title: 'Full Stack Architect & UI Design',
+    description: 'Az esztétika és a logika metszéspontján alkot: pixelpontos Figma terveket vált át tiszta, skálázható kódra.',
+    skills: ['Figma', 'Vue.js', 'Tailwind CSS', 'Node.js']
+  },
+  {
+    name: 'Barna Bence',
+    title: 'QA Engineer & DevOps Strategist',
+    description: 'A minőség megszállottja; automatizált tesztekkel és stabil szerverkörnyezettel garantálja a hibátlan működést.',
+    skills: ['PHP unit', 'Cypress', 'CI/CD', 'Node.js']
+  },
+  {
+    name: 'Horváth Gergő',
+    title: 'Frontend Developer & Nuxt Expert',
+    description: 'A felhasználói élmény felelőse, aki a Nuxt.js erejével hoz létre villámgyors és SEO-barát webes alkalmazásokat.',
+    skills: ['Nuxt.js', 'Vue.js', 'TypeScript', 'Tailwind CSS']
+  },
+]
 
 // Definition of statistical data
 const statsData = reactive([
@@ -87,7 +137,7 @@ const startCounting = () => {
 }
 
 onMounted(() => {
-  // 3. hero animate class AI
+  // hero animate class AI
   gsap.fromTo(".hero-animate", 
     { 
       y: 30,         // 30 px starts from below
@@ -99,6 +149,25 @@ onMounted(() => {
       duration: 1,   // animation lasts 1 second
       stagger: 0.2,  // each element starts 0.2 seconds after the previous one
       ease: "power3.out" // smooth easing for a nice effect
+    }
+  );
+  // about animate class AI
+  gsap.fromTo(".about-animate", 
+    { 
+      y: 50, 
+      opacity: 0 
+    }, 
+    { 
+      y: 0, 
+      opacity: 1, 
+      duration: 1, 
+      stagger: 0.2, 
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: "#aboutus", // when the about us section enters the viewport
+        start: "top 80%",    // start the animation when the top of the section is 80% from the top of the viewport
+        toggleActions: "play none none none" // only play the animation once
+      }
     }
   );
 })
