@@ -13,7 +13,7 @@
         <h2 class="hero-animate text-sm font-bold text-center text-[#F3A122] tracking-widest uppercase">Dizájn & Fejlesztés</h2>
         
         <!--welcome text-->
-        <p class="hero-animate mx-5 lg:mx-40 text-4xl lg:text-7xl font-extrabold text-center mt-6 text-white leading-tight">
+        <p class="hero-animate mx-5 lg:mx-40 text-4xl lg:text-7xl font-extrabold text-center mt-6  leading-tight">
           Digitális lábnyom, 
           <span class="bg-linear-to-r bg-clip-text text-transparent from-[#F3A122] to-[#EC7C14]">
             maradandó
@@ -30,7 +30,7 @@
           <button class="bg-linear-to-r from-[#F3A122] to-[#EC7C14] text-black font-bold px-10 py-3 rounded-md hover:scale-105 transition-transform shadow-lg shadow-orange-500/20">
             Ajánlatkérés
           </button>
-          <button class="border border-gray-500 text-white font-semibold px-10 py-3 rounded-md hover:bg-white/10 transition-colors">
+          <button class="border border-gray-500 font-semibold px-10 py-3 rounded-md hover:bg-white/10 transition-colors">
             Ismerjetek meg minket
           </button>
         </div>
@@ -56,7 +56,7 @@
 
       <!--site label-->
       <h2 class="about-animate text-sm md:text-left md:pl-4 text-center font-bold text-[#F3A122] tracking-widest uppercase">Csapatunkról</h2>
-      <p class="about-animate text-2xl font-extrabold md:text-left md:pl-4 text-center mt-5 text-white leading-tight">
+      <p class="about-animate text-2xl font-extrabold md:text-left md:pl-4 text-center mt-5 leading-tight">
         Akik mögötte
         <span class="bg-linear-to-r bg-clip-text text-transparent from-[#F3A122] to-[#EC7C14]">
           állnak
