@@ -87,18 +87,18 @@ const startCounting = () => {
 }
 
 onMounted(() => {
-  // 3. ÚJ: Szövegek beúsztatása
+  // 3. hero animate class AI
   gsap.fromTo(".hero-animate", 
     { 
-      y: 30,         // 30 pixellel lentről indul
-      opacity: 0     // láthatatlanul
+      y: 30,         // 30 px starts from below
+      opacity: 0     // opacity starts from 0, so it's invisible
     }, 
     { 
-      y: 0,          // az eredeti helyére érkezik
-      opacity: 1,    // teljesen látható lesz
-      duration: 1,   // 1 másodpercig tart az animáció
-      stagger: 0.2,  // 0.2 másodperc különbséggel indulnak az elemek egymás után
-      ease: "power3.out" // szép, lassuló érkezés
+      y: 0,          // ends at its original position
+      opacity: 1,    // ends fully visible
+      duration: 1,   // animation lasts 1 second
+      stagger: 0.2,  // each element starts 0.2 seconds after the previous one
+      ease: "power3.out" // smooth easing for a nice effect
     }
   );
 })
