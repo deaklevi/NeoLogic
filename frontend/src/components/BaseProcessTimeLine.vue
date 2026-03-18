@@ -27,11 +27,11 @@ export default {
   data() {
     return {
       steps: [
-        { id: '01', title: 'Konzultáció', description: 'Megismerjük az igényeidet, céljaidat és a projekt kereteit. Díjmentes egyeztetés.' },
-        { id: '02', title: 'Tervezés & Dizájn', description: 'Wireframe-ek, moodboard és végleges dizájn Figmában — te irányítasz, mi alkotunk.' },
-        { id: '03', title: 'Fejlesztés', description: 'Modern technológiákkal fejlesztjük a projektet, rendszeres demo-kkal tartva a kapcsolatot.' },
-        { id: '04', title: 'Tesztelés & Finomhangolás', description: 'Alapos tesztelés, teljesítmény-optimalizálás és a végső simítások.' },
-        { id: '05', title: 'Átadás & Indítás', description: 'Élesítés, oktatás és dokumentáció — hogy magabiztosan használd az új rendszered.' }
+        { id: '01', title: 'Stratégiai Konzultáció & Tervezés', description: 'Minden sikeres projekt egy mély merüléssel kezdődik. Nem csak a funkciókat listázzuk, hanem megértjük az üzleti céljaidat.' },
+        { id: '02', title: 'UI/UX Design (Figma)', description: 'Az esztétika nálunk nem öncélú: a felhasználói élményt (UX) és a modern arculatot (UI) ötvözzük.' },
+        { id: '03', title: 'Agilis Fejlesztés (Vue.js & Laravel)', description: 'Itt történik a varázslat: a design életre kel. A legmodernebb stack-et használjuk (Nuxt.js, Laravel), hogy a rendszer gyors, biztonságos és skálázható legyen.' },
+        { id: '04', title: 'QA & Automatizált Tesztelés', description: 'Az elegancia számunkra a hibátlan működést is jelenti. Nem az élesítés után keressük a hibákat.' },
+        { id: '05', title: 'Bevezetés & Hosszú távú Támogatás', description: 'Az átadás nem a búcsút jelenti. Gondoskodunk róla, hogy az indulás zökkenőmentes legyen, és te magabiztosan kezeld az új eszközödet.' }
       ]
     }
   }

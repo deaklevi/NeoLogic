@@ -30,8 +30,8 @@
           <button class="bg-linear-to-r from-[#F3A122] to-[#EC7C14] text-black font-bold px-10 py-3 rounded-md hover:scale-105 transition-transform shadow-lg shadow-orange-500/20">
             Ajánlatkérés
           </button>
-          <a href="#aboutus">
-            <button class="border border-gray-500 font-semibold px-10 py-3 rounded-md hover:bg-white/10 transition-colors">
+          <a href="#aboutus" class="border border-gray-500 px-10 py-3 rounded-md hover:bg-white/10 transition-colors">
+            <button class="font-semibold w-full h-full items-center justify-center flex">
               Ismerjetek meg minket
             </button>
           </a>
@@ -71,7 +71,7 @@
       </div>
 
     </div>
-    <!--about us page start-->
+    <!--about us page end-->
 
     <!--services page start-->
     <div id="services" class="w-full border-b border-white/10 py-12">
@@ -95,7 +95,7 @@
       </div>
 
     </div>
-    <!--services page start-->
+    <!--services page end-->
 
     <!--process page start-->
     <div id="process" class="w-full border-b border-white/10 py-12">
@@ -116,7 +116,28 @@
       <BaseProcessTimeLine  class="mt-10"/>
 
     </div>
-    <!--process page start-->
+    <!--process page end-->
+
+    <!--availability page start-->
+    <div id="availability" class="w-full border-b border-white/10 py-12">
+
+      <!--availability label-->
+      <h2 class="about-animate text-sm md:text-left md:pl-4 text-center font-bold text-[#F3A122] tracking-widest uppercase">Kapcsolat</h2>
+      <p class="about-animate text-2xl font-extrabold md:text-left md:pl-4 text-center mt-5 leading-tight">
+        Beszéljünk az 
+        <span class="bg-linear-to-r bg-clip-text text-transparent from-[#F3A122] to-[#EC7C14]">
+          ötletedről
+        </span>
+      </p>
+      
+      <p class="about-animate text-gray-400 md:text-left md:pl-4 text-center mt-5 leading-tight max ">
+        Írd meg, miben segíthetünk — 24 órán belül válaszolunk. Az első konzultáció díjmentes.
+      </p>
+
+      <BaseAvailabilityDatas class="mt-10"/>
+
+    </div>
+    <!--availability page end-->
 
   </BaseLayout>
 </template>
@@ -128,6 +149,7 @@ import BaseLayout from '@layouts/BaseLayout.vue'
 import BaseCard from '@components/BaseCard.vue'
 import BaseServiceCard from '@components/BaseServiceCard.vue'
 import BaseProcessTimeLine from '@components/BaseProcessTimeLine.vue'
+import BaseAvailabilityDatas from '@components/BaseAvailabilityDatas.vue'
 
 import { useIntersectionObserver } from '@vueuse/core'
 import gsap from 'gsap'
