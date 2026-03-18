@@ -7,7 +7,7 @@
       
       <ul class="hidden md:flex justify-between items-center gap-8" :class="isDark ? 'text-gray-400' : 'text-gray-600'">
         <li><a href="#aboutus">Rólunk</a></li>
-        <li><a href="#">Szolgáltatások</a></li>
+        <li><a href="#services">Szolgáltatások</a></li>
         <li><a href="#">Folyamat</a></li>
         <li><a href="#">Kapcsolat</a></li>
       </ul>

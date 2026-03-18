@@ -52,7 +52,7 @@
     <!--landing page end-->
 
     <!--about us page start-->
-    <div id="aboutus" class="w-full border-b border-white/10">
+    <div id="aboutus" class="w-full border-b border-white/10 py-12">
 
       <!--site label-->
       <h2 class="about-animate text-sm md:text-left md:pl-4 text-center font-bold text-[#F3A122] tracking-widest uppercase">Csapatunkról</h2>
@@ -64,12 +64,32 @@
       </p>
       
       <!--worker cards-->
-      <div class="flex flex-row flex-wrap justify-center lg:justify-center gap-6 px-4 mt-20 pb-12">
+      <div class="flex flex-row flex-wrap justify-center lg:justify-center gap-6 px-4 mt-20">
         <BaseCard v-for="data in worker" :name="data.name" :title="data.title" :description="data.description" :skills="data.skills"/>
       </div>
 
     </div>
     <!--about us page start-->
+
+    <!--services page start-->
+    <div id="services" class="w-full border-b border-white/10 py-12">
+
+      <!--services label-->
+      <h2 class="about-animate text-sm md:text-left md:pl-4 text-center font-bold text-[#F3A122] tracking-widest uppercase">Csapatunkról</h2>
+      <p class="about-animate text-2xl font-extrabold md:text-left md:pl-4 text-center mt-5 leading-tight">
+        Akik mögötte
+        <span class="bg-linear-to-r bg-clip-text text-transparent from-[#F3A122] to-[#EC7C14]">
+          állnak
+        </span>
+      </p>
+      
+      <!--services cards-->
+      <div class="flex flex-row flex-wrap justify-center lg:justify-center gap-6 px-4 mt-20 pb-12">
+        <BaseServiceCard v-for="data in services" :name="data.name" :description="data.description" :image="data.image"/>
+      </div>
+
+    </div>
+    <!--services page start-->
 
   </BaseLayout>
 </template>
@@ -78,12 +98,14 @@
 import { reactive, ref, onMounted } from 'vue'
 import BaseLayout from '@layouts/BaseLayout.vue'
 import BaseCard from '@components/BaseCard.vue'
+import BaseServiceCard from '@components/BaseServiceCard.vue'
 import { useIntersectionObserver } from '@vueuse/core'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
+// worker json data
 const worker = [
   {
     name: 'Deák Levente',
@@ -108,6 +130,40 @@ const worker = [
     title: 'Frontend Developer & Nuxt Expert',
     description: 'A felhasználói élmény felelőse, aki a Nuxt.js erejével hoz létre villámgyors és SEO-barát webes alkalmazásokat.',
     skills: ['Nuxt.js', 'Vue.js', 'TypeScript', 'Tailwind CSS']
+  },
+]
+
+// services json data
+const services = [
+  {
+    name: 'Tervezés',
+    description: 'Egyedi, felhasználóbarát felületek tervezése egyeztetés szerint figmába.',
+    image: 'design.png'
+  },
+  {
+    name: 'Webfejlesztés',
+    description: 'A jóváhagyott tervekből reszponzív, gyors és interaktív weboldalt építünk. A kód, ami életre kelti a designt.',
+    image: 'web-programming.png'
+  },
+  {
+    name: 'Backend',
+    description: 'Egyedi adatbázisok, API-k fejlesztése, hogy a weboldalad pontosan azt tudja, amire szükséged van.',
+    image: 'backend.png'
+  },
+  {
+    name: 'SEO & Teljesítmény',
+    description: 'SEO beállításokkal és a optimalizálással biztosítjuk, hogy weboldalad előkelő helyre kerüljön a Google találatok között.',
+    image: 'seo.png'
+  },
+  {
+    name: 'Landing page',
+    description: 'Olyan landing page-et készítünk, ami hatékonyan alakítja a látogatókat ügyfelekké.',
+    image: 'startup.png'
+  },
+  {
+    name: 'Karbantartás',
+    description: 'Gondoskodunk a biztonsági frissítésekről és a hibamentes működésről, hogy weboldalad mindig naprakész és gyors legyen.',
+    image: 'settings.png'
   },
 ]
 
