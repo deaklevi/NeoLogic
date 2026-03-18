@@ -22,7 +22,7 @@
         </p>
         
         <p class="text-gray-400 p-5 text-center mt-6 max-w-2xl mx-auto text-lg hero-animate ">
-          A Neologic csapata modern, gyors és konverzióra optimalizált weboldalakat készít vállalkozásának.
+          A Neologic csapata modern, gyors és konverzióra optimalizált  weboldalakat készít vállalkozásának. Legyen szó bemutatkozó oldalról  vagy komplex webalkalmazásról – mi megoldjuk.
         </p>
     
         <!--buttons-->
@@ -30,9 +30,11 @@
           <button class="bg-linear-to-r from-[#F3A122] to-[#EC7C14] text-black font-bold px-10 py-3 rounded-md hover:scale-105 transition-transform shadow-lg shadow-orange-500/20">
             Ajánlatkérés
           </button>
-          <button class="border border-gray-500 font-semibold px-10 py-3 rounded-md hover:bg-white/10 transition-colors">
-            Ismerjetek meg minket
-          </button>
+          <a href="#aboutus">
+            <button class="border border-gray-500 font-semibold px-10 py-3 rounded-md hover:bg-white/10 transition-colors">
+              Ismerjetek meg minket
+            </button>
+          </a>
         </div>
 
         <div 
@@ -75,12 +77,16 @@
     <div id="services" class="w-full border-b border-white/10 py-12">
 
       <!--services label-->
-      <h2 class="about-animate text-sm md:text-left md:pl-4 text-center font-bold text-[#F3A122] tracking-widest uppercase">Csapatunkról</h2>
+      <h2 class="about-animate text-sm md:text-left md:pl-4 text-center font-bold text-[#F3A122] tracking-widest uppercase">Szolgáltatásaink</h2>
       <p class="about-animate text-2xl font-extrabold md:text-left md:pl-4 text-center mt-5 leading-tight">
-        Akik mögötte
+        Amiben
         <span class="bg-linear-to-r bg-clip-text text-transparent from-[#F3A122] to-[#EC7C14]">
-          állnak
+          segítünk
         </span>
+      </p>
+      
+      <p class="about-animate text-gray-400 md:text-left md:pl-4 text-center mt-5 leading-tight max ">
+        Teljes körű digitális szolgáltatások a koncepciótól az üzemeltetésig.
       </p>
       
       <!--services cards-->
@@ -91,14 +97,38 @@
     </div>
     <!--services page start-->
 
+    <!--process page start-->
+    <div id="process" class="w-full border-b border-white/10 py-12">
+
+      <!--process label-->
+      <h2 class="about-animate text-sm text-center font-bold text-[#F3A122] tracking-widest uppercase mx-6">Folyamat</h2>
+      <p class="about-animate text-2xl font-extrabold  text-center mt-5 leading-tight mx-6">
+        Folyamatunk: Az ötlettől a stabil rendszerig
+        <span class="bg-linear-to-r bg-clip-text text-transparent from-[#F3A122] to-[#EC7C14]">
+          stabil rendszerig
+        </span>
+      </p>
+
+      <p class="about-animate text-gray-400 text-center mt-5 leading-tight mx-6 ">
+        Nem csak weboldalakat építünk, hanem átlátható, mérnöki precizitással kidolgozott digitális megoldásokat.
+      </p>
+
+      <BaseProcessTimeLine  class="mt-10"/>
+
+    </div>
+    <!--process page start-->
+
   </BaseLayout>
 </template>
 
 <script setup>
 import { reactive, ref, onMounted } from 'vue'
+
 import BaseLayout from '@layouts/BaseLayout.vue'
 import BaseCard from '@components/BaseCard.vue'
 import BaseServiceCard from '@components/BaseServiceCard.vue'
+import BaseProcessTimeLine from '@components/BaseProcessTimeLine.vue'
+
 import { useIntersectionObserver } from '@vueuse/core'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
