@@ -140,7 +140,7 @@
           <BaseAvailabilityDatas class="mt-10"/>
         </div>
 
-        <BaseForm class="mx-6"/>
+        <BaseForm/>
       </div>
     </div>
     <!--availability page end-->

@@ -1,5 +1,5 @@
 <template>
-  <header :class="isDark ? 'bg-[#101013]/50 text-white' : 'bg-white/50 text-black'" class="w-full fixed top-0 left-0 z-50 backdrop-blur-md border-b border-white/5">
+  <header :class="isDark ? 'bg-[#101013]/50 text-white' : 'bg-[#F5F5F5]/50 text-black'" class="w-full fixed top-0 left-0 z-50 backdrop-blur-md border-b border-white/5">
     <nav class="flex justify-between items-center p-4 max-w-7xl mx-auto">
       <h1 class="text-2xl font-bold">
         <span class="text-[#F3A122]">Neo</span>Logic
@@ -51,7 +51,7 @@ const toggleMode = () => {
     document.documentElement.style.color = "#ffffff";
   } else {
     // VILÁGOS MÓD
-    document.documentElement.style.backgroundColor = "#ffffff";
+    document.documentElement.style.backgroundColor = "#F5F5F5";
     document.documentElement.style.color = "#000000";
   }
 }
