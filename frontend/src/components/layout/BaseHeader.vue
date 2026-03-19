@@ -9,7 +9,7 @@
         <li><a href="#aboutus">Rólunk</a></li>
         <li><a href="#services">Szolgáltatások</a></li>
         <li><a href="#process">Folyamat</a></li>
-        <li><a href="#">Kapcsolat</a></li>
+        <li><a href="#availability">Kapcsolat</a></li>
       </ul>
 
       <div class="flex justify-center items-center gap-4">

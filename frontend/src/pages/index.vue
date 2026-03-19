@@ -123,19 +123,25 @@
 
       <!--availability label-->
       <h2 class="about-animate text-sm md:text-left md:pl-4 text-center font-bold text-[#F3A122] tracking-widest uppercase">Kapcsolat</h2>
+      
       <p class="about-animate text-2xl font-extrabold md:text-left md:pl-4 text-center mt-5 leading-tight">
         Beszéljünk az 
         <span class="bg-linear-to-r bg-clip-text text-transparent from-[#F3A122] to-[#EC7C14]">
-          ötletedről
+        ötletedről
         </span>
       </p>
-      
-      <p class="about-animate text-gray-400 md:text-left md:pl-4 text-center mt-5 leading-tight max ">
-        Írd meg, miben segíthetünk — 24 órán belül válaszolunk. Az első konzultáció díjmentes.
-      </p>
 
-      <BaseAvailabilityDatas class="mt-10"/>
+      <div class="flex justify-between">
+        <div>
+          <p class="about-animate text-gray-400 md:text-left md:pl-4 text-center mt-5 leading-tight max ">
+            Írd meg, miben segíthetünk — 24 órán belül válaszolunk. Az első konzultáció díjmentes.
+          </p>
 
+          <BaseAvailabilityDatas class="mt-10"/>
+        </div>
+
+        <BaseForm />
+      </div>
     </div>
     <!--availability page end-->
 
@@ -150,6 +156,7 @@ import BaseCard from '@components/BaseCard.vue'
 import BaseServiceCard from '@components/BaseServiceCard.vue'
 import BaseProcessTimeLine from '@components/BaseProcessTimeLine.vue'
 import BaseAvailabilityDatas from '@components/BaseAvailabilityDatas.vue'
+import BaseForm from '@components/BaseForm.vue'
 
 import { useIntersectionObserver } from '@vueuse/core'
 import gsap from 'gsap'

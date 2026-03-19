@@ -1,9 +1,9 @@
 <template>
-    <div class="flex flex-col">
+    <div class="flex flex-col p-6">
 
-        <div class="flex">
+        <div class="about-animate flex">
             <div class="bg-[#222226] p-4 rounded-lg flex items-center justify-center mb-4 mr-5">
-                <img src="../assets/script.png" alt="" class="w-6 h-6 object-contain">
+                <img src="../assets/mail.png" alt="" class="w-6 h-6 object-contain">
             </div>
             <div>
                 <h3 class="text-lg font-bold text-gray-400">Email</h3>
@@ -11,9 +11,9 @@
             </div>
         </div>
 
-        <div class="flex">
+        <div class="about-animate flex">
             <div class="bg-[#222226] p-4 rounded-lg flex items-center justify-center mb-4 mr-5">
-                <img src="../assets/script.png" alt="" class="w-6 h-6 object-contain">
+                <img src="../assets/telephone.png" alt="" class="w-6 h-6 object-contain">
             </div>
             <div>
                 <h3 class="text-lg font-bold text-gray-400">Telefon</h3>
@@ -21,9 +21,9 @@
             </div>
         </div>
 
-        <div class="flex">
+        <div class="about-animate flex">
             <div class="bg-[#222226] p-4 rounded-lg flex items-center justify-center mb-4 mr-5">
-                <img src="../assets/script.png" alt="" class="w-6 h-6 object-contain">
+                <img src="../assets/location.png" alt="" class="w-6 h-6 object-contain">
             </div>
             <div>
                 <h3 class="text-lg font-bold text-gray-400">Helyszín</h3>
