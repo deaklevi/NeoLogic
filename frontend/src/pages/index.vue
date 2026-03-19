@@ -119,7 +119,7 @@
     <!--process page end-->
 
     <!--availability page start-->
-    <div id="availability" class="w-full border-b border-white/10 py-12">
+    <div id="availability" class="w-full py-12">
 
       <!--availability label-->
       <h2 class="about-animate text-sm md:text-left md:pl-4 text-center font-bold text-[#F3A122] tracking-widest uppercase">Kapcsolat</h2>
@@ -131,7 +131,7 @@
         </span>
       </p>
 
-      <div class="flex justify-between">
+      <div class="flex lg:flex-row flex-col justify-between">
         <div>
           <p class="about-animate text-gray-400 md:text-left md:pl-4 text-center mt-5 leading-tight max ">
             Írd meg, miben segíthetünk — 24 órán belül válaszolunk. Az első konzultáció díjmentes.
@@ -140,7 +140,7 @@
           <BaseAvailabilityDatas class="mt-10"/>
         </div>
 
-        <BaseForm />
+        <BaseForm class="mx-6"/>
       </div>
     </div>
     <!--availability page end-->

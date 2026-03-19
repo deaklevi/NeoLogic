@@ -1,5 +1,5 @@
 <template>
-    <form action="" class="bg-[#17171C] p-8 rounded-xl flex flex-col gap-6 text-white max-w-lg shadow-2xl border border-white/5">
+    <form action="" class="bg-[#17171C] p-8 rounded-xl flex flex-col gap-6 text-white max-w-lg shadow-2xl border border-white/5 lg:mx-6 mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div class="flex flex-col gap-2">
             <label for="name" class="text-sm font-medium text-gray-400">Név</label>
