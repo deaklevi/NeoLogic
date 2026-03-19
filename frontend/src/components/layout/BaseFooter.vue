@@ -5,7 +5,7 @@
                 <span class="text-[#F3A122]">Neo</span>Logic
             </h1>
             <div class="text-sm">
-                <span class="text-gray-500">Minden jog fenntartva &copy; {{ new Date().getFullYear() }}</span> NeoLogic.kft
+                <span class="text-gray-500">Minden jog fenntartva &copy; {{ new Date().getFullYear() }}</span> NeoLogic
             </div>
         </div>
     </footer>
