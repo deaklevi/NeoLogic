@@ -1,6 +1,6 @@
 <template>
-  <div class="lg:mx-6 mx-auto max-w-lg max-[800px]:w-5/6">
-    <form @submit.prevent="handleSubmit" class="about-animate bg-[#17171C] p-8 rounded-xl flex flex-col gap-6 text-white shadow-2xl border border-white/5">
+  <div class="lg:mx-6 mx-auto max-w-lg max-[800px]:w-[90%]">
+    <form @submit.prevent="handleSubmit" class="about-animate bg-[#17171C] p-8 max-[800px]:p-5 rounded-xl flex flex-col gap-6 text-white shadow-2xl border border-white/5">
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div class="flex flex-col gap-2">
