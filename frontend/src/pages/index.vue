@@ -151,16 +151,17 @@
 <script setup>
 import { reactive, ref, onMounted } from 'vue'
 
+import { useIntersectionObserver } from '@vueuse/core'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+// components
 import BaseLayout from '@layouts/BaseLayout.vue'
 import BaseCard from '@components/BaseCard.vue'
 import BaseServiceCard from '@components/BaseServiceCard.vue'
 import BaseProcessTimeLine from '@components/BaseProcessTimeLine.vue'
 import BaseAvailabilityDatas from '@components/BaseAvailabilityDatas.vue'
 import BaseForm from '@components/BaseForm.vue'
-
-import { useIntersectionObserver } from '@vueuse/core'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -173,7 +174,7 @@ const worker = [
     skills: ['PHP', 'Laravel', 'MySQL', 'Rest API']
   },
   {
-    name: 'Szűcs Marcel',
+    name: 'Szűcs Marcell',
     title: 'Full Stack Architect & UI Design',
     description: 'Az esztétika és a logika metszéspontján alkot: pixelpontos Figma terveket vált át tiszta, skálázható kódra.',
     skills: ['Figma', 'Vue.js', 'Tailwind CSS', 'Node.js']
