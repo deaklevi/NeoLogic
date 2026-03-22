@@ -28,9 +28,11 @@
           @click="toggleMode"
         />
         
-        <button type="button" class="bg-[#F3A122] text-black font-semibold px-6 py-2 rounded-md">
-          Ajánlatkérés
-        </button>
+        <a href="#availability" class="bg-[#F3A122] text-black px-6 py-2 rounded-md w-full h-full items-center justify-center flex">
+          <button type="button" class=" font-semibold ">
+            Ajánlatkérés
+          </button>
+        </a>
       </div>
     </nav>
   </header>

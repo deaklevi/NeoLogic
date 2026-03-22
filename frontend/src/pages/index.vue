@@ -27,9 +27,11 @@
     
         <!--buttons-->
         <div class="hero-animate flex flex-col sm:flex-row justify-center gap-4 mt-10 px-5 w-full sm:w-auto">
-          <button class="bg-linear-to-r from-[#F3A122] to-[#EC7C14] text-black font-bold px-10 py-3 rounded-md hover:scale-105 transition-transform shadow-lg shadow-orange-500/20">
-            Ajánlatkérés
-          </button>
+          <a href="#availability" class="bg-linear-to-r from-[#F3A122] to-[#EC7C14] text-black px-10 py-3 rounded-md hover:scale-105 transition-transform shadow-lg shadow-orange-500/20">
+            <button class="font-bold w-full h-full items-center justify-center flex">
+              Ajánlatkérés
+            </button>
+          </a>
           <a href="#aboutus" class="border border-gray-500 px-10 py-3 rounded-md hover:bg-white/10 transition-colors">
             <button class="font-semibold w-full h-full items-center justify-center flex">
               Ismerjetek meg minket
@@ -255,37 +257,48 @@ const startCounting = () => {
 onMounted(() => {
   // hero animate class AI
   gsap.fromTo(".hero-animate", 
-    { 
-      y: 30,         // 30 px starts from below
-      opacity: 0     // opacity starts from 0, so it's invisible
-    }, 
-    { 
-      y: 0,          // ends at its original position
-      opacity: 1,    // ends fully visible
-      duration: 1,   // animation lasts 1 second
-      stagger: 0.2,  // each element starts 0.2 seconds after the previous one
-      ease: "power3.out" // smooth easing for a nice effect
-    }
+    { y: 30, opacity: 0 }, 
+    { y: 0, opacity: 1, duration: 1, stagger: 0.2, ease: "power3.out" }
   );
+
+  ScrollTrigger.create({
+    trigger: statsSection.value,
+    start: "top 85%", // when the top of the section hits 85% of the viewport height
+    onEnter: () => {
+      statsData.forEach((stat) => {
+        gsap.to(stat, {
+          displayValue: stat.target,
+          duration: 2,
+          ease: "power2.out",
+        })
+      });
+    },
+    once: true // just trigger once when it enters the viewport
+  });
+
+  const sections = ['#aboutus', '#services', '#process', '#availability'];
+
   // about animate class AI
-  gsap.fromTo(".about-animate", 
-    { 
-      y: 50, 
-      opacity: 0 
-    }, 
-    { 
-      y: 0, 
-      opacity: 1, 
-      duration: 1, 
-      stagger: 0.2, 
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: "#aboutus", // when the about us section enters the viewport
-        start: "top 80%",    // start the animation when the top of the section is 80% from the top of the viewport
-        toggleActions: "play none none none" // only play the animation once
+  sections.forEach(section => {
+    gsap.fromTo(`${section} .about-animate`, 
+      { y: 40, opacity: 0 }, 
+      { 
+        y: 0, 
+        opacity: 1, 
+        duration: 0.8, 
+        stagger: 0.15, 
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: section,
+          start: "top 75%", // like the hero animation but a bit earlier
+          toggleActions: "play none none none"
+        }
       }
-    }
-  );
+    );
+  });
+
+  ScrollTrigger.refresh();
+
 })
 
 // Only fires when the user scrolls there AI
@@ -301,6 +314,11 @@ useIntersectionObserver(
 </script>
 
 <style scoped>
+.hero-animate, .about-animate, .stat-item {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
 /* A little extra refinement to the fonts AI */
 span {
   font-variant-numeric: tabular-nums; /* Prevents numbers from jumping during spins AI*/
