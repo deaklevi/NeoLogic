@@ -22,7 +22,7 @@
         </p>
         
         <p class="text-gray-400 p-5 text-center mt-6 max-w-2xl mx-auto text-lg hero-animate ">
-          A Neologic csapata modern, gyors és konverzióra optimalizált  weboldalakat készít vállalkozásának. Legyen szó bemutatkozó oldalról  vagy komplex webalkalmazásról – mi megoldjuk.
+          A Neologic csapata modern és konverzióra fókuszált weboldalakkal segíti vállalkozása növekedését. A letisztult bemutatkozó oldalaktól a komplex rendszerekig – mi életre keltjük elképzeléseit.
         </p>
     
         <!--buttons-->
@@ -105,7 +105,7 @@
       <!--process label-->
       <h2 class="about-animate text-sm text-center font-bold text-[#F3A122] tracking-widest uppercase mx-6">Folyamat</h2>
       <p class="about-animate text-2xl font-extrabold  text-center mt-5 leading-tight mx-6">
-        Folyamatunk: Az ötlettől a stabil rendszerig
+        Folyamatunk: Az ötlettől a
         <span class="bg-linear-to-r bg-clip-text text-transparent from-[#F3A122] to-[#EC7C14]">
           stabil rendszerig
         </span>
@@ -136,7 +136,7 @@
       <div class="flex lg:flex-row flex-col justify-between">
         <div>
           <p class="about-animate text-gray-400 md:text-left md:pl-4 text-center mt-5 leading-tight max ">
-            Írd meg, miben segíthetünk — 24 órán belül válaszolunk. Az első konzultáció díjmentes.
+            Írd meg, miben segíthetünk — 24 órán belül válaszolunk.
           </p>
 
           <BaseAvailabilityDatas class="mt-10"/>
@@ -172,25 +172,25 @@ const worker = [
   {
     name: 'Deák Levente',
     title: 'Backend Engineer & API Specialist',
-    description: 'A rendszerek motorjának építője; robusztus adatbázisokat és villámgyors interfészeket tervez a biztonság jegyében.',
+    description: 'A rendszerek motorjának építője. Robusztus architektúrákat és villámgyors interfészeket épít a biztonság jegyében.',
     skills: ['PHP', 'Laravel', 'MySQL', 'Rest API']
   },
   {
     name: 'Szűcs Marcell',
     title: 'Full Stack Architect & UI Design',
-    description: 'Az esztétika és a logika metszéspontján alkot: pixelpontos Figma terveket vált át tiszta, skálázható kódra.',
+    description: 'Az esztétika és a logika metszéspontján alkot: pixelpontos látványterveket vált át tiszta, skálázható kódra.',
     skills: ['Figma', 'Vue.js', 'Tailwind CSS', 'Node.js']
   },
   {
     name: 'Barna Bence',
     title: 'QA Engineer & DevOps Strategist',
-    description: 'A minőség megszállottja; automatizált tesztekkel és stabil szerverkörnyezettel garantálja a hibátlan működést.',
-    skills: ['PHP unit', 'Cypress', 'CI/CD', 'Node.js']
+    description: 'precizitás nagykövete. Automatizált tesztekkel és optimalizált CI/CD folyamatokkal garantálja a hibátlan működést.',
+    skills: ['PHPUnit', 'Cypress', 'CI/CD', 'Node.js']
   },
   {
     name: 'Horváth Gergő',
     title: 'Frontend Developer & Nuxt Expert',
-    description: 'A felhasználói élmény felelőse, aki a Nuxt.js erejével hoz létre villámgyors és SEO-barát webes alkalmazásokat.',
+    description: 'A felhasználói élmény felelőse, aki a Nuxt.js erejével hoz létre villámgyors és keresőoptimalizált alkalmazásokat.',
     skills: ['Nuxt.js', 'Vue.js', 'TypeScript', 'Tailwind CSS']
   },
 ]
@@ -199,7 +199,7 @@ const worker = [
 const services = [
   {
     name: 'Tervezés',
-    description: 'Egyedi, felhasználóbarát felületek tervezése egyeztetés szerint figmába.',
+    description: 'Egyedi, felhasználóbarát felületek tervezése egyeztetés szerint Figmába alapokon.',
     image: 'design.png'
   },
   {
@@ -209,7 +209,7 @@ const services = [
   },
   {
     name: 'Backend',
-    description: 'Egyedi adatbázisok, API-k fejlesztése, hogy a weboldalad pontosan azt tudja, amire szükséged van.',
+    description: 'Egyedi adatbázisok, a háttérrendszerek stabilitása és az egyedi funkciók motorja.',
     image: 'backend.png'
   },
   {
