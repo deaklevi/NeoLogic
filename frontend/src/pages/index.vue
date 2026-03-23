@@ -10,10 +10,10 @@
       <div v-motion-fade-visible-once class="relative z-10 w-full flex flex-col items-center sm:mt-0 mt-10">
 
         <!--site label-->
-        <h2 class="hero-animate text-sm font-bold text-center text-[#F3A122] tracking-widest uppercase">Dizájn & Fejlesztés</h2>
+        <h2 class="hero-animate text-sm font-bold text-center text-[#F3A122] tracking-widest uppercase poppins-medium">Dizájn & Fejlesztés</h2>
         
         <!--welcome text-->
-        <p class="hero-animate mx-5 lg:mx-40 text-4xl lg:text-7xl font-extrabold text-center mt-6  leading-tight">
+        <p class="hero-animate mx-5 lg:mx-40 text-4xl lg:text-7xl font-extrabold text-center mt-6  leading-tight ">
           Digitális lábnyom, 
           <span class="bg-linear-to-r bg-clip-text text-transparent from-[#F3A122] to-[#EC7C14]">
             maradandó
@@ -21,12 +21,12 @@
           érték.
         </p>
         
-        <p class="text-gray-400 p-5 text-center mt-6 max-w-2xl mx-auto text-lg hero-animate ">
+        <p class="text-gray-400 p-5 text-center mt-6 max-w-2xl mx-auto text-lg hero-animate poppins-medium  ">
           A Neologic csapata modern, gyors és konverzióra optimalizált  weboldalakat készít vállalkozásának. Legyen szó bemutatkozó oldalról  vagy komplex webalkalmazásról – mi megoldjuk.
         </p>
     
         <!--buttons-->
-        <div class="hero-animate flex flex-col sm:flex-row justify-center gap-4 mt-10 px-5 w-full sm:w-auto">
+        <div class="hero-animate flex flex-col sm:flex-row justify-center gap-4 mt-10 px-5 w-full sm:w-auto poppins-medium">
           <a href="#availability" class="bg-linear-to-r from-[#F3A122] to-[#EC7C14] text-black px-10 py-3 rounded-md hover:scale-105 transition-transform shadow-lg shadow-orange-500/20">
             <button class="font-bold w-full h-full items-center justify-center flex">
               Ajánlatkérés
@@ -43,7 +43,7 @@
           ref="statsSection"
           class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-20 mt-20 px-10 w-full max-w-6xl border-t border-white/10 pt-12"
         >
-          <div v-for="stat in statsData" :key="stat.label" class="flex flex-col items-center">
+          <div v-for="stat in statsData" :key="stat.label" class="flex flex-col items-center poppins-medium">
             <p class="font-black text-center text-4xl md:text-5xl text-[#F3A122]">
               <span>{{ Math.floor(stat.displayValue) }}</span>{{ stat.suffix }}
             </p>
@@ -56,7 +56,7 @@
     <!--landing page end-->
 
     <!--about us page start-->
-    <div id="aboutus" class="w-full border-b border-white/10 py-12">
+    <div id="aboutus" class="w-full border-b border-white/10 py-12 poppins-medium">
 
       <!--site label-->
       <h2 class="about-animate text-sm md:text-left md:pl-4 text-center font-bold text-[#F3A122] tracking-widest uppercase">Csapatunkról</h2>
@@ -68,7 +68,7 @@
       </p>
       
       <!--worker cards-->
-      <div class="flex flex-row flex-wrap justify-center lg:justify-center gap-6 px-4 mt-20">
+      <div class="flex flex-row flex-wrap justify-center lg:justify-center gap-6 px-4 mt-20 poppins-medium ">
         <BaseCard v-for="data in worker" :name="data.name" :title="data.title" :description="data.description" :skills="data.skills"/>
       </div>
 
@@ -76,7 +76,7 @@
     <!--about us page end-->
 
     <!--services page start-->
-    <div id="services" class="w-full border-b border-white/10 py-12">
+    <div id="services" class="w-full border-b border-white/10 py-12 poppins-medium ">
 
       <!--services label-->
       <h2 class="about-animate text-sm md:text-left md:pl-4 text-center font-bold text-[#F3A122] tracking-widest uppercase">Szolgáltatásaink</h2>
@@ -100,7 +100,7 @@
     <!--services page end-->
 
     <!--process page start-->
-    <div id="process" class="w-full border-b border-white/10 py-12">
+    <div id="process" class="w-full border-b border-white/10 py-12 poppins-medium ">
 
       <!--process label-->
       <h2 class="about-animate text-sm text-center font-bold text-[#F3A122] tracking-widest uppercase mx-6">Folyamat</h2>
@@ -121,10 +121,10 @@
     <!--process page end-->
 
     <!--availability page start-->
-    <div id="availability" class="w-full py-12">
+    <div id="availability" class="w-full py-12 .poppins-medium ">
 
       <!--availability label-->
-      <h2 class="about-animate text-sm md:text-left md:pl-4 text-center font-bold text-[#F3A122] tracking-widest uppercase">Kapcsolat</h2>
+      <h2 class="about-animate text-sm md:text-left md:pl-4 text-center font-bold text-[#F3A122] tracking-widest uppercase .">Kapcsolat</h2>
       
       <p class="about-animate text-2xl font-extrabold md:text-left md:pl-4 text-center mt-5 leading-tight">
         Beszéljünk az 
@@ -133,7 +133,7 @@
         </span>
       </p>
 
-      <div class="flex lg:flex-row flex-col justify-between">
+      <div class="flex lg:flex-row flex-col justify-between poppins-medium ">
         <div>
           <p class="about-animate text-gray-400 md:text-left md:pl-4 text-center mt-5 leading-tight max ">
             Írd meg, miben segíthetünk — 24 órán belül válaszolunk. Az első konzultáció díjmentes.
