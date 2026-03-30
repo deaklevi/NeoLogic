@@ -4,15 +4,17 @@
     class="w-full fixed top-0 left-0 z-50 backdrop-blur-md border-b border-white/5 transition-colors duration-300"
   >
     <nav class="flex justify-between items-center p-4 max-w-7xl mx-auto">
-      <h1 class="text-2xl font-bold">
-        <span class="text-[#F3A122]">Neo</span>Logic
-      </h1>
+      <NuxtLink to="/">
+        <h1 class="text-2xl font-bold">
+          <span class="text-[#F3A122]">Neo</span>Logic
+        </h1>
+      </NuxtLink>
       
       <ul class="hidden md:flex justify-between items-center gap-8" :class="isDark ? 'text-gray-400' : 'text-gray-600'">
-        <li><a href="#" class="hover:text-[#F3A122] transition-colors">Rólunk</a></li>
-        <li><a href="#" class="hover:text-[#F3A122] transition-colors">Szolgáltatások</a></li>
-        <li><a href="#" class="hover:text-[#F3A122] transition-colors">Folyamat</a></li>
-        <li><a href="#" class="hover:text-[#F3A122] transition-colors">Kapcsolat</a></li>
+        <li><a href="#aboutus" class="hover:text-[#F3A122] transition-colors">Rólunk</a></li>
+        <li><a href="#services" class="hover:text-[#F3A122] transition-colors">Szolgáltatások</a></li>
+        <li><a href="#process" class="hover:text-[#F3A122] transition-colors">Folyamat</a></li>
+        <li><a href="#availability" class="hover:text-[#F3A122] transition-colors">Kapcsolat</a></li>
       </ul>
 
       <div class="flex justify-center items-center gap-4">

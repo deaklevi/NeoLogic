@@ -32,13 +32,33 @@
 
         <div 
           ref="statsSection"
-          class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-20 mt-20 px-10 w-full max-w-6xl border-t border-white/10 pt-12"
+          class="mx-auto mt-24 w-full max-w-6xl px-6 md:px-10"
         >
-          <div v-for="stat in statsData" :key="stat.label" class="flex flex-col items-center">
-            <p class="font-black text-center text-4xl md:text-5xl text-[#F3A122]">
-              <span>{{ Math.floor(stat.displayValue) }}</span>{{ stat.suffix }}
-            </p>
-            <p class="text-gray-400 text-center text-xs md:text-sm uppercase tracking-widest mt-2">{{ stat.label }}</p>
+          <div class="w-full border-t border-white/10 pt-16">
+            <div class="flex flex-wrap justify-center gap-y-12 gap-x-12 md:gap-x-24">
+
+              <div 
+                v-for="stat in statsData" 
+                :key="stat.label" 
+                class="flex flex-col items-center group min-w-[120px]"
+              >
+                <div class="flex items-baseline font-black text-[#F3A122] transition-transform duration-300 group-hover:scale-110">
+                  <span class="text-4xl md:text-6xl tracking-tighter">
+                    {{ Math.floor(stat.displayValue) }}
+                  </span>
+                  <span class="text-2xl md:text-3xl ml-1 opacity-90">
+                    {{ stat.suffix }}
+                  </span>
+                </div>
+
+                <p class="mt-3 text-center text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 group-hover:text-gray-300 transition-colors">
+                  {{ stat.label }}
+                </p>
+
+                <div class="mt-4 h-0.5 w-4 bg-[#F3A122]/20 group-hover:w-8 group-hover:bg-[#F3A122] transition-all duration-500"></div>
+              </div>
+            
+            </div>
           </div>
         </div>
       </div>
@@ -197,13 +217,13 @@ const worker = [
 
 const services = [
   {
-    name: 'Tervezés',
-    description: 'Egyedi, felhasználóbarát felületek tervezése egyeztetés szerint Figmába alapokon.',
+    name: 'Egyéni tervezés',
+    description: 'Felhasználóbarát felületek tervezése egyeztetés szerint.',
     image: 'design.png'
   },
   {
     name: 'Webfejlesztés',
-    description: 'A jóváhagyott tervekből reszponzív, gyors és interaktív weboldalt építünk. A kód, ami életre kelti a designt.',
+    description: 'A jóváhagyott tervekből reszponzív, gyors és interaktív weboldalt építünk.',
     image: 'web-programming.png'
   },
   {
@@ -218,7 +238,7 @@ const services = [
   },
   {
     name: 'Landing page',
-    description: 'Olyan landing page-et készítünk, ami hatékonyan alakítja a látogatókat ügyfelekké.',
+    description: 'Olyan landing oldalt készítünk, ami hatékonyan alakítja a látogatókat ügyfelekké.',
     image: 'startup.png'
   },
   {
@@ -231,9 +251,8 @@ const services = [
 // Statisztikai adatok
 const statsData = reactive([
   { label: 'Csapattag', target: 4, displayValue: 0, suffix: '' },
-  { label: 'Projekt', target: 50, displayValue: 0, suffix: '+' },
+  { label: 'Projekt', target: 25, displayValue: 0, suffix: '+' },
   { label: 'Év tapasztalat', target: 4, displayValue: 0, suffix: '+' },
-  { label: 'Elégedett ügyfél', target: 100, displayValue: 0, suffix: '%' },
 ])
 
 const statsSection = ref(null)

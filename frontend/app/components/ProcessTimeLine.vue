@@ -41,9 +41,9 @@
 <script setup>
 const steps = [
   { id: '01', title: 'Konzultáció & Tervezés', description: 'Minden sikeres projekt egy mély merüléssel kezdődik. Nem csak funkciókat listázunk, hanem megértjük az üzleti céljaidat.' },
-  { id: '02', title: 'UI/UX Design', description: 'Az esztétika nálunk nem öncélú: a felhasználói élményt (UX) és a modern arculatot (UI) ötvözzük Figmában.' },
-  { id: '03', title: 'Agilis Fejlesztés', description: 'A legmodernebb stack-et használjuk (Nuxt.js, Laravel), hogy a rendszer gyors, biztonságos és skálázható legyen.' },
+  { id: '02', title: 'UI/UX Design', description: 'Az esztétika nálunk nem öncélú: a felhasználói élményt (UX) és a modern arculatot (UI) ötvözzük.' },
+  { id: '03', title: 'Agilis Fejlesztés', description: 'A legmodernebb stack-et használjuk , hogy a rendszer gyors, biztonságos és skálázható legyen.' },
   { id: '04', title: 'QA & Tesztelés', description: 'Az elegancia számunkra a hibátlan működést is jelenti. Automatizált tesztekkel garantáljuk a minőséget.' },
-  { id: '05', title: 'Átadás & Támogatás', description: 'Gondoskodunk róla, hogy az indulás zökkenőmentes legyen, és hosszú távon is számíthass ránk.' }
+  { id: '05', title: 'Átadás & Támogatás', description: 'Gondoskodunk róla, hogy az indulás zökkenőmentes legyen, és hosszú távon is számíthasson ránk.' }
 ]
 </script>

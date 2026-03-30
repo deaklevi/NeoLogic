@@ -6,20 +6,20 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div class="flex flex-col gap-2">
           <label for="name" class="text-sm font-medium text-gray-400">Név</label>
-          <input v-model="form.name" type="text" id="name" placeholder="Kovács János" required
+          <input v-model="form.name" type="text" id="name" placeholder="Teljes név" required
             class="bg-[#222226] border border-white/10 rounded-lg px-4 py-2.5 outline-none focus:border-[#F3A122] focus:ring-1 focus:ring-[#F3A122] transition-all duration-200">
         </div>
 
         <div class="flex flex-col gap-2">
           <label for="email" class="text-sm font-medium text-gray-400">Email</label>
-          <input v-model="form.email" type="email" id="email" placeholder="janos@pelda.hu" required
+          <input v-model="form.email" type="email" id="email" placeholder="email@pelda.com" required
             class="bg-[#222226] border border-white/10 rounded-lg px-4 py-2.5 outline-none focus:border-[#F3A122] focus:ring-1 focus:ring-[#F3A122] transition-all duration-200">
         </div>
       </div>
 
       <div class="flex flex-col gap-2">
         <label for="company" class="text-sm font-medium text-gray-400">Cég <span class="text-xs opacity-50">(opcionális)</span></label>
-        <input v-model="form.company" type="text" id="company" placeholder="Cégnév Kft." 
+        <input v-model="form.company" type="text" id="company" placeholder="Cégnév" 
           class="bg-[#222226] border border-white/10 rounded-lg px-4 py-2.5 outline-none focus:border-[#F3A122] focus:ring-1 focus:ring-[#F3A122] transition-all duration-200">
       </div>
 
@@ -27,7 +27,7 @@
         <label for="message" class="text-sm font-medium text-gray-400">Üzenet</label>
         <textarea v-model="form.message" id="message" rows="4" required
           class="bg-[#222226] border border-white/10 rounded-lg px-4 py-2.5 outline-none focus:border-[#F3A122] focus:ring-1 focus:ring-[#F3A122] transition-all duration-200 resize-none"
-          placeholder="Miben segíthetek?"></textarea>
+          placeholder="Miben segíthetünk?"></textarea>
       </div>
 
       <button type="submit" :disabled="loading"
